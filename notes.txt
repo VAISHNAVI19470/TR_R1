@@ -1,0 +1,113 @@
+single page application there is no page reload 
+it is modern page
+
+-React is mainly used to create single page application
+checking one to one mapping: diffing algorithm
+
+What is virtual DOM
+  -it is a vitual representation of UI which is kept in memory later
+   synced with real DOM with the help of library called "ReactDOM"
+
+ - updation of real dom with virtual dom
+
+ -the entire process of updating the real dom with the help of VDOM 
+  called "Reconsiliation"
+
+
+JSX:
+  -stands for javascipt and XML.
+  -it is a javascipt syntax extension used to create HTML-like markup in
+  the react.
+  -Actual way to create a element in react by using a method called as
+       -React.createElement("tagname",{property:"value"}/null,content/childeren)
+    React.createElement("h1",null,"header")
+
+  -JSX is not a part of react but it is recommended to use in react.
+
+Rules of JSX:
+  -1) every element irrespective of paired/unpaired tag both must be closed
+  2)more than one JSX is used then they must wrapped with one parent element
+  eg:  <div>
+            <h1></h1>
+            <p></p>
+            </div>
+
+JSX expression:
+  -it is used to call the variables,mathematical expression inside the element.
+  syntax: <h1>{variable/expression}</h1>
+
+Components:
+  - Components are the files/modules which consist of js related logics 
+  which can be reuse.
+
+  Components can be divided into 2 types;
+
+  1)class based Components(CBC)
+  2)functional based Components(FBC)
+
+1)class based Components(BC):
+   -CBC is similar to js es6 class.
+   -CBS are "statefull" Component because of default state objects parent 
+   inside the class
+   syntax:
+     class Person{
+       constructor(name,age){
+         this.name=name;
+         this.age=age;
+         }
+   }
+
+   class Child extends Person{
+     constructor(name,age,city){
+       super(name,age);
+       this.city=city;
+       }
+    }
+
+
+    syntax:
+     class App extends React.Component{
+       render(){
+         return(
+          //JSX
+         )
+       }
+    }
+    export default App;
+
+2.functional based Components:
+  -FBC are similar to Js functions.
+  -FBC are "stateless" because there is no state object untill react v16.8.
+
+  syntax: function App(){
+          return(
+
+          )
+  }
+  export default App;
+
+  OR
+
+  const App=()=>{
+  return(
+  //JSX
+  )
+  }
+  export default App;
+
+Note:  while creating a react Component the names must be started 
+
+
+
+Component composition:
+ - Component composition is used to combine multiple Components into single application
+
+rafce: to create functional Component 
+rcc: to create class Component
+
+Props:
+ -Props is nothing but a properties similar to html attributes.
+ -props is an object.
+ -prop is an object used to exchange inforomation from parent Component to Child Component
+
+ 
